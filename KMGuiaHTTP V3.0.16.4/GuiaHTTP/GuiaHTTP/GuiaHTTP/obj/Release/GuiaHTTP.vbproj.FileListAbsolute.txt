@@ -1,0 +1,150 @@
+C:\Users\Cesar\AppData\Local\Temporary Projects\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Cesar\AppData\Local\Temporary Projects\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+C:\Users\Cesar\AppData\Local\Temporary Projects\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+C:\Users\Cesar\AppData\Local\Temporary Projects\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Instalador.resources
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.exe
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.pdb
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.xml
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.exe
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.xml
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.pdb
+C:\Program Files\KS Soluciones\Key Monitor\Guia\GuiaHTTP.exe
+C:\Program Files\KS Soluciones\Key Monitor\Guia\GuiaHTTP.pdb
+C:\Program Files\KS Soluciones\Key Monitor\Guia\GuiaHTTP.xml
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\GuiaHTTP.exe
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\GuiaHTTP.pdb
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\GuiaHTTP.xml
+C:\Desarrollo\KS NET\Key Monitor\Guia Filtros\GuiaHTTP.exe
+C:\Desarrollo\KS NET\Key Monitor\Guia Filtros\GuiaHTTP.pdb
+C:\Desarrollo\KS NET\Key Monitor\Guia Filtros\GuiaHTTP.xml
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\Linea\GuiaHTTP.exe
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Instalador.resources
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.exe
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.xml
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.pdb
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\Linea\GuiaHTTP.pdb
+D:\Desarrollo\KS Soluciones\Key Monitor\Guia Filtros\Linea\GuiaHTTP.xml
+C:\Desarrollo\KS Net\Key Monitor\Guia Filtros\Linea\GuiaHTTP.exe
+C:\Desarrollo\KS Net\Key Monitor\Guia Filtros\Linea\GuiaHTTP.pdb
+C:\Desarrollo\KS Net\Key Monitor\Guia Filtros\Linea\GuiaHTTP.xml
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.exe
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.pdb
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.xml
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Instalador.resources
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.exe
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.xml
+C:\Desarrollo\KS Net\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.pdb
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.exe
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.pdb
+D:\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.xml
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.exe
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.xml
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.pdb
+C:\Users\Cesar\Desktop\GuiaHTTP\Guia Filtros\Linea\GuiaHTTP.exe
+C:\Users\Cesar\Desktop\GuiaHTTP\Guia Filtros\Linea\GuiaHTTP.pdb
+C:\Users\Cesar\Desktop\GuiaHTTP\Guia Filtros\Linea\GuiaHTTP.xml
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Instalador.resources
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.exe
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.pdb
+C:\Users\Cesar\Desktop\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\GuiaHTTP.xml
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.exe
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.xml
+C:\Program Files\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.pdb
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Instalador.resources
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.Resources.resources
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.GuiaHTTP.resources
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\Guiahttp.exe
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\Guiahttp.pdb
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\Guiahttp.xml
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\Guiahttp.exe
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\Guiahttp.xml
+C:\Program Files (x86)\Ks Soluciones\Key Monitor NET\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\Guiahttp.pdb
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.exe
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.pdb
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.xml
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP Serfin\AplicacionesSerfin\Key Monitor POS\Guia en Linea\KMGuiaHTTP.exe
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP Serfin\AplicacionesSerfin\Key Monitor POS\Guia en Linea\KMGuiaHTTP.pdb
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP Serfin\AplicacionesSerfin\Key Monitor POS\Guia en Linea\KMGuiaHTTP.xml
+F:\Eglobal\Guia Replicacion\KMGuiaHTTP.exe
+F:\Eglobal\Guia Replicacion\KMGuiaHTTP.pdb
+F:\Eglobal\Guia Replicacion\KMGuiaHTTP.xml
+F:\Eglobal\Guia Filtos\KMGuiaHTTP.exe
+F:\Eglobal\Guia Filtos\KMGuiaHTTP.pdb
+F:\Eglobal\Guia Filtos\KMGuiaHTTP.xml
+F:\Key Monitor Eglobal\Guia Filtros\KMGuiaHTTP.exe
+F:\Key Monitor Eglobal\Guia Filtros\KMGuiaHTTP.pdb
+F:\Key Monitor Eglobal\Guia Filtros\KMGuiaHTTP.xml
+F:\Key Monitor Eglobal\Replicador Linea\KMGuiaHTTP.exe
+F:\Key Monitor Eglobal\Replicador Linea\KMGuiaHTTP.pdb
+F:\Key Monitor Eglobal\Replicador Linea\KMGuiaHTTP.xml
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Instalador.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Resources.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.GuiaHTTP.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\Guia HTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+F:\Key Monitor Eglobal\Guia Linea\KMGuiaHTTP.exe
+F:\Key Monitor Eglobal\Guia Linea\KMGuiaHTTP.pdb
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Instalador.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Resources.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.GuiaHTTP.resources
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+F:\Desarrollo\Desarrollo\KS Soluciones\Key Monitor\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+G:\Key Monitor Eglobal\Guia Linea\KMGuiaHTTP.exe
+G:\Key Monitor Eglobal\Guia Linea\KMGuiaHTTP.pdb
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Instalador.resources
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Resources.resources
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.GuiaHTTP.resources
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\KMGuiaHTTP V3_16_1 sinDelay\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+G:\KS\KEYMONITOR\KM GUIA HTTP\GuiaLineaNormal\KMGuiaHTTP V3_16_1 sinDelay\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+C:\Program Files (x86)\KS Soluciones\Key Monitor EGLOBAL\GuiaFiltros\KMGuiaHTTP.exe
+C:\Program Files (x86)\KS Soluciones\Key Monitor EGLOBAL\GuiaFiltros\KMGuiaHTTP.pdb
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.exe
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.pdb
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\MySql.Data.dll
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Instalador.resources
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Resources.resources
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.GuiaHTTP.resources
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+G:\Respaldos KS\En Proceso\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+F:\Desarrollo\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+F:\Desarrollo\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.exe
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.pdb
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.exe
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\KMGuiaHTTP.pdb
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\MySql.Data.dll
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResolveAssemblyReference.cache
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Instalador.resources
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.Resources.resources
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\KMGuiaHTTP.GuiaHTTP.resources
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResGen.read.1.tlog
+F:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Release\ResGen.write.1.tlog

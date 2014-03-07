@@ -1,0 +1,178 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GuiaHTTP
+</name>
+</assembly>
+<members>
+<member name="P:GuiaHTTP.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:GuiaHTTP.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="P:GuiaHTTP.My.Resources.Resources.Registro">
+	<summary>
+  Busca una cadena traducida similar a Software\\KS Soluciones\\Key Monitor\\V3.
+</summary>
+</member><member name="T:GuiaHTTP.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="F:GuiaHTTP.Administrador.TipoDepurar.VisorEventos">
+	<summary>
+ Solo se escribe en el visor de eventos
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.TipoDepurar.Simple">
+	<summary>
+ Permite escribir poco informacion en un archivo de texto plano
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.TipoDepurar.Total">
+	<summary>
+ Hace uns depuracion más extendida y la informacion se guarda en un archivo de texto plano
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.TipoDepurar.Consola">
+	<summary>
+ Hace una depuracion total pero la informacion la manda al administrador
+ </summary>
+</member><member name="E:GuiaHTTP.Administrador.DatosRecibidos">
+	<summary>
+ Este evento se dispara cuando el administrador hace una peticion
+ </summary>
+</member><member name="E:GuiaHTTP.Administrador.MensajeError">
+	<summary>
+ Este evento se dispara cuando algun dato no se puede agregar a la depuracion y devuelve el mensaje
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._RutaArchivo">
+	<summary>
+ Guarda la ruta del archivo donde se va a escribir
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._NombreAplicacion">
+	<summary>
+ El nombre de la aplicacion que lo utiliza
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.VMcolaAdmin">
+	<summary>
+ Guarda todas las peticiones del administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.VMtcpCliente">
+	<summary>
+ Permite la conexion con el administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.VMtmrAdmin">
+	<summary>
+ Permite la reconexion con el administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.VMhiloAdmin">
+	<summary>
+ Procesa todas las peticiones del administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._EcoSinResponder">
+	<summary>
+ El numero de ecos sin responder para una reconexion
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._Puerto">
+	<summary>
+ El numero de puerto de conexion para el administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._Servidor">
+	<summary>
+ La direccion donde se encuentra el administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._TiempoEco">
+	<summary>
+ El tiempo para mandar un eco en segundos
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador.VMstrUltimoMensaje">
+	<summary>
+ Almesena el ultimo mensaje que se el envio al administrador
+ </summary>
+</member><member name="F:GuiaHTTP.Administrador._TipoDepuracion">
+	<summary>
+ Contiene el tipo de depuracion que se esta manejando
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.TipoDepuracion">
+	<summary>
+ Devuelve o obtione el tipo de depucion que se esta generando
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Ruta_Archivo">
+	<summary>
+ Devuelve o obtiene la ruta donde se guarda el archivo para guardar la informacion de la depuracion
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Nombre_Aplicacion">
+	<summary>
+ Devuelve o obtiene el nombre del aplicacion para que se muestre en el visor de eventos
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Ecos_sin_responder">
+	<summary>
+ Devuelve o obtiene el numero de ecos sin responder para una nueva reconexion
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Tiempo_Eco">
+	<summary>
+ Devuelve o obtiene el tiempo en segundos en el que se quiere que se envie un eco por falta de inactividad
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Puerto">
+	<summary>
+ Devuelve o obtiene el puerto de conexion con el administrador
+ </summary>
+</member><member name="P:GuiaHTTP.Administrador.Servidor">
+	<summary>
+ Devuelve o obtione la direccion donde se encuentra el administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.Agregar_Mensaje(System.String)">
+	<summary>
+ Agregar un mensaje
+ </summary>
+	<param name="Mensaje">El mensaje que se va a agregar</param>
+</member><member name="M:GuiaHTTP.Administrador.Agregar_Mensaje(System.String,GuiaHTTP.Administrador.TipoDepurar)">
+	<summary>
+ Agregar un mensaje
+ </summary>
+	<param name="Mensaje">El mensaje que se va a agregar</param>
+	<param name="Depuracion">El tipo de depuracion que se esta usando</param>
+</member><member name="M:GuiaHTTP.Administrador.Conectar">
+	<summary>
+ Permite conectarme con el administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.Conectar(System.Int32)">
+	<summary>
+ Permite conectarme con el administrador
+ </summary>
+	<param name="Puerto">El numero de puerto para la conexion con el administrador</param>
+</member><member name="M:GuiaHTTP.Administrador.Conectar(System.Int32,System.String)">
+	<summary>
+ Permite conectarme con el administrador
+ </summary>
+	<param name="Puerto">El numero de puerto para la conexion con el administrador</param>
+	<param name="Servidor">Es la direccion de conexion donde se encuentra el administrador</param>
+</member><member name="M:GuiaHTTP.Administrador.Cerrar">
+	<summary>
+ Termina la conexion con el administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.EnviarAdministrador(System.String)">
+	<summary>
+ Permite enviar los resultados de la peticion al administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.ConectarAdministrador">
+	<summary>
+ Permite la conexion con el administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.VMtcpCliente_DatosRecibidos(System.String)">
+	<summary>
+ Recibe los datos del administrador
+ </summary>
+</member><member name="M:GuiaHTTP.Administrador.AgregarDepuracion">
+	<summary>
+ Agrega un mensaje dependiendo la el tipo de depuracion que se haya solicitado
+ </summary>
+</member><member name="T:GuiaHTTP.Administrador">
+	<summary>
+ Esta clase permite la conexion con el administrar y atiende las peticiones que hace el sistema
+ </summary>
+</member>
+</members>
+</doc>
