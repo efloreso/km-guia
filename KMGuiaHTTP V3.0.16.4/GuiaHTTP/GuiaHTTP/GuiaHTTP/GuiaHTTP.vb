@@ -47,8 +47,10 @@ Public Class GuiaHTTP
     Private VMblnReconectando As Boolean                            'Si es true se encuentra reconectando con el servidor transaccional
     Private VMstrErrorConsola As String                             'Almacena el último error para que sea enviado a la consola
     Private VMblnValidaEnvio As Boolean
+    Private VMobjDepuracion As Depuracion
 
     Protected Overrides Sub OnStart(ByVal args() As String)
+        VMobjDepuracion = Depuracion.Instancia
         Threading.Thread.Sleep(15000)
         If args.GetLength(0) > 0 Then
             Select Case args(0).Trim.ToLower
@@ -60,6 +62,8 @@ Public Class GuiaHTTP
                     abreArchivoLog()
                 Case "/dc"
                     _Log = enuDepuracion.Consola
+                Case "/dl"
+                    VMobjDepuracion.Depuracion = Depuracion.TipoDepuracion.Completa
                 Case Else
                     _Log = enuDepuracion.Ninguna
             End Select

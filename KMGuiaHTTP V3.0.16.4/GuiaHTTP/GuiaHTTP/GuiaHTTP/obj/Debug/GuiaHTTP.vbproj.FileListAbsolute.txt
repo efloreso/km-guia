@@ -58,3 +58,10 @@ C:\Program Files (x86)\KS Soluciones\Key Monitor Completo\GuiaFiltros\KMGuiaHTTP
 C:\Program Files (x86)\KS Soluciones\Key Monitor Completo\GuiaFiltros\KMGuiaHTTP.pdb
 J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.exe
 J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.pdb
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.exe
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.pdb
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\GuiaHTTP.vbprojResolveAssemblyReference.cache
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.Instalador.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.Resources.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\KMGuiaHTTP.GuiaHTTP.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\Debug\GuiaHTTP.vbproj.GenerateResource.Cache

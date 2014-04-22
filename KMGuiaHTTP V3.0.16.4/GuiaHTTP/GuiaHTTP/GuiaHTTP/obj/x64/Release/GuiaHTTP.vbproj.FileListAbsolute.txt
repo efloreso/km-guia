@@ -7,3 +7,10 @@ J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP
 J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\x64\KMGuiaHTTP.exe
 J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\x64\MySql.Data.dll
 J:\Desarrollo\Key Monitor\ENTREGABLES\GUIA EN LINEA\KMGuiaHTTP\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\KMGuiaHTTP.exe
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\x64\KMGuiaHTTP.exe
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\bin\Release\x64\MySql.Data.dll
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\KMGuiaHTTP.Instalador.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\KMGuiaHTTP.Resources.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\KMGuiaHTTP.GuiaHTTP.resources
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\GuiaHTTP.vbproj.GenerateResource.Cache
+C:\Users\Elizabeth\Documents\GitHub\km-guia\KMGuiaHTTP V3.0.16.4\GuiaHTTP\GuiaHTTP\GuiaHTTP\obj\x64\Release\KMGuiaHTTP.exe

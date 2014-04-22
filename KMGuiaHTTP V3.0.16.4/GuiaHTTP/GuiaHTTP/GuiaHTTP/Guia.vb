@@ -28,6 +28,7 @@ Public Class Guia
     Private VMblnEsperaCola As Boolean                  'Si es true al final de un timer significa que el otro está esperando que termine para validar el otro extremo de la cola
     Private _LevantandoSocket As Boolean                'True si se está llevando a cabo el proceso de listen, 
     Private VMblnUsuarioAutentificado As Boolean        'Determina si el usuario se autentifico y mando la cadena SENDTRAN
+    Private VMobjDepuracion As Depuracion
 #End Region
 #Region "Temporizadores"
     Private WithEvents VMtmrReconecta As Timers.Timer   'En caso de que se caiga el socket lo reinicia
@@ -60,6 +61,9 @@ Public Class Guia
     Private _UltimaTransaccion As String    'La fecha cuando se recibio el último bloque
     Private _Replicador As Boolean          'Indica si el puero sólo recibirá conexiones del replicador
     'Private _recuperacion As Boolean
+
+    Private _BaseCentral As TipoBD
+    Private WithEvents VMtmrAutentifUsr As Timers.Timer
 #End Region
 #Region "Propiedades públicas"
     Public ReadOnly Property Duplicando() As Boolean
@@ -207,6 +211,15 @@ Public Class Guia
             Return _Reconectando
         End Get
     End Property
+
+    Public Property BaseCentral() As Object
+        Get
+            BaseCentral = _BaseCentral
+        End Get
+        Set(ByVal value As Object)
+            _BaseCentral = value
+        End Set
+    End Property
 #End Region
     Public Sub New(ByVal VPrincipal As GuiaHTTP)
         Try
@@ -230,6 +243,10 @@ Public Class Guia
             VMtmrProcesa = New Timers.Timer
             VMtmrProcesa.Interval = 100
             VMtmrProcesa.Enabled = False
+
+            VMobjDepuracion = Depuracion.Instancia
+            VMtmrAutentifUsr = New Timers.Timer
+            VMtmrAutentifUsr.AutoReset = False
         Catch ex As Exception
             Notifica("No se pudo inicializar la clase para el envío de transacciones " & vbNewLine & ex.Message, VPrincipal, enuEscribeLog.Ambos, enuTipoAviso.MensajeError)
         End Try
@@ -325,20 +342,32 @@ Public Class Guia
     End Sub
     Private Sub VMtcpServidor_DatosRecibidos(ByVal IDTerminal As System.Net.IPEndPoint, ByVal Datos As String) Handles VMtcpServidor.DatosRecibidos
         Try
+            If VMobjDepuracion.Depuracion = Depuracion.TipoDepuracion.Completa Then
+                VMobjDepuracion.AgregarMensaje("Recibiendo los siguientes datos del Cliente " & Datos.Substring(65, 5) & " " & IDTerminal.ToString & " Puerto: " & _puerto & _
+                                               vbNewLine & Datos)
+            End If
             If VMipClientes.ContainsValue(IDTerminal) Then
                 If Datos.Contains("SENDTRAN") Then
-                    _NombrePC = Datos.Substring(51, 14)
-                    _Usuario = Datos.Substring(65, 5)
-                    _aplicacion = Datos.Substring(71, 2)
-                    _FechaConexion = Format(Date.Now, "dd/MM/yyyy HH:mm:ss")
-                    _EstadoPuerto = "Autentificado"
+                    VMtmrAutentifUsr.Stop()
+                    If ValidarUsr(Datos.Substring(65, 5)) Then
+                        VMobjDepuracion.AgregarMensaje("Usuario aceptado: " & Datos.Substring(65, 5) & ", con los siguientes datos IP: " & IDTerminal.ToString & " Puerto: " & _puerto)
+                        _NombrePC = Datos.Substring(51, 14)
+                        _Usuario = Datos.Substring(65, 5)
+                        _aplicacion = Datos.Substring(71, 2)
+                        _FechaConexion = Format(Date.Now, "dd/MM/yyyy HH:mm:ss")
+                        _EstadoPuerto = "Autentificado"
 
-                    Notifica("Se ha recibido la solicitud de envío de información en el puerto " & _puerto & " con los siguientes datos" & vbNewLine & "IP: " & IDTerminal.ToString & vbNewLine & "PC: " & _NombrePC & vbNewLine & "Usuario: " & _Usuario & "[" & _aplicacion & "]", VMGuiaHTTP, enuEscribeLog.Ambos, enuTipoAviso.Informativo)
-                    'Actica los timers de recepción y envío de datos
-                    'VMtmrColaEntrada.Enabled = True
+                        Notifica("Se ha recibido la solicitud de envío de información en el puerto " & _puerto & " con los siguientes datos" & vbNewLine & "IP: " & IDTerminal.ToString & vbNewLine & "PC: " & _NombrePC & vbNewLine & "Usuario: " & _Usuario & "[" & _aplicacion & "]", VMGuiaHTTP, enuEscribeLog.Ambos, enuTipoAviso.Informativo)
+                        'Actica los timers de recepción y envío de datos
+                        'VMtmrColaEntrada.Enabled = True
 
-                    VMtcpServidor.EnviarDatos(IDTerminal, Datos)
-                    VMblnUsuarioAutentificado = True
+                        VMtcpServidor.EnviarDatos(IDTerminal, Datos)
+                        VMblnUsuarioAutentificado = True
+                    Else
+                        VMobjDepuracion.AgregarMensaje("Conexión terminada con el usuario: " & Datos.Substring(65, 5) & ", con los siguientes datos IP: " & IDTerminal.ToString & " Puerto: " & _puerto)
+                        VMtcpServidor_ConexionTerminada(IDTerminal)
+                        VMtmrReconecta.Enabled = True
+                    End If
                 End If
                 'VMblnUsuarioAutentificado = True
             End If
@@ -391,6 +420,10 @@ Acepta:
             _IP = IDTerminal.ToString
             _Usuario = "Sin autentificar"
             _EstadoPuerto = "Sin autentificar"
+
+
+            VMtmrAutentifUsr.Interval = 60000
+            VMtmrAutentifUsr.Start()
             'guardaBitacora("Se conecto el cliente " & IDTerminal.ToString, 1)
         Else
             'guardaBitacora("El puerto esta ocupado cuando se intento conctar " & IDTerminal.ToString, 8)
@@ -560,4 +593,98 @@ Acepta:
     End Sub
 #End Region
 
+    Private Function ValidarUsr(ByVal VPstrUsuario) As Boolean
+        Dim VLdbsBase As Object
+        Dim VLstrSQL As String
+        Dim VLcmdComando As Object
+        Dim VLrcsDatos As Object
+        Dim VLblnUsr As Boolean
+
+        VLblnUsr = False
+        VLdbsBase = Nothing
+        VLrcsDatos = Nothing
+        VLcmdComando = Nothing
+        VLstrSQL = "select * from tuserskm where Id_Usuario like '" & VPstrUsuario & "%'"
+
+        Select Case VGtipBDCentral.Tipo
+            Case TipoBase.MySQL
+                VLdbsBase = New MySqlConnection
+                VLdbsBase.ConnectionString = "Server = " & VGtipBDCentral.Servidor & _
+                                             ";database = " & VGtipBDCentral.Base & _
+                                             ";uid = " & VGtipBDCentral.Usuario & _
+                                             ";pwd = " & VGtipBDCentral.Contrasena
+            Case TipoBase.Oracle
+                VLdbsBase = New OracleConnection
+                VLdbsBase.ConnectionString = "Server = " & VGtipBDCentral.Servidor & _
+                             ";uid = " & VGtipBDCentral.Usuario & _
+                             ";pwd = " & VGtipBDCentral.Contrasena
+            Case TipoBase.SQLServer
+                VLdbsBase = New SqlClient.SqlConnection
+                If VGtipBDCentral.SI Then
+                    VLdbsBase.ConnectionString = "Server = " & VGtipBDCentral.Servidor & _
+                                 ";Initial Catalog = " & VGtipBDCentral.Base & _
+                                 ";Integrated Security=SSPI;"
+                Else
+                    VLdbsBase.ConnectionString = "Server = " & VGtipBDCentral.Servidor & _
+                                 ";Initial Catalog = " & VGtipBDCentral.Base & _
+                                 ";uid = " & VGtipBDCentral.Usuario & _
+                                 ";pwd = " & VGtipBDCentral.Contrasena
+                End If
+        End Select
+        Try
+            VLdbsBase.open()
+            Select Case VGtipBDCentral.Tipo
+                Case TipoBase.MySQL
+                    VLcmdComando = New MySqlCommand(VLstrSQL, VLdbsBase)
+                Case TipoBase.SQLServer
+                    VLcmdComando = New SqlClient.SqlCommand(VLstrSQL, VLdbsBase)
+                Case TipoBase.Oracle
+                    VLcmdComando = New OracleCommand(VLstrSQL, VLdbsBase)
+            End Select
+            Try
+                VLrcsDatos = VLcmdComando.ExecuteReader()
+                If VLrcsDatos.hasrows Then
+                    VLblnUsr = True
+                Else
+                    VLblnUsr = False
+                End If
+                VLrcsDatos.close()
+                VLcmdComando.dispose()
+            Catch ex As Exception
+                VMobjDepuracion.AgregarMensaje("Error al leer el usuario: " & VPstrUsuario)
+            End Try
+            VLdbsBase.close()
+        Catch ex As Exception
+            VMobjDepuracion.AgregarMensaje("Error al validar el usuario: " & VPstrUsuario)
+        End Try
+
+        Return VLblnUsr
+    End Function
+
+    Private Sub VMtmrAutentifUsr_Elapsed(sender As Object, e As System.Timers.ElapsedEventArgs) Handles VMtmrAutentifUsr.Elapsed
+        If VMblnUsuarioAutentificado = False Then
+            VMtmrAutentifUsr.Stop()
+            VMobjDepuracion.AgregarMensaje("Conexión terminada " & _Usuario & ", con los siguientes datos IP: " & _IP & " Puerto: " & _puerto)
+            Try
+                VMtcpServidor.Cerrar()
+                '-----------------------------------
+                VMipClientes.Clear()
+                _UsuariosConectados -= 1
+                _EstadoPuerto = "Libre"
+                _Procesados = 0
+                _Ignoradas = 0
+                _Recibidos = 0
+                _IP = ""
+                _NombrePC = ""
+                _aplicacion = 0
+                _Usuario = "Libre"
+                _UltimaTransaccion = ""
+                VMblnUsuarioAutentificado = False
+                '------------------------------------
+                VMtmrReconecta.Enabled = True
+            Catch ex1 As Exception
+                ''Notifica("1. Conflicto al intentar reanudar comunicación  en el puerto [" & _puerto & "]", VMGuiaHTTP, enuEscribeLog.Ambos, enuTipoAviso.MensajeError, ex.Message)
+            End Try
+        End If
+    End Sub
 End Class

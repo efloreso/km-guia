@@ -45,7 +45,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>C:\Program Files %28x86%29\KS Soluciones\Key Monitor Completo\GuiaHTTP\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\..\..\..\Program Files %28x86%29\KS Soluciones\Key Monitor Completo\GuiaHTTP\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
@@ -94,8 +94,9 @@
     <OutputPath>bin\Release\x64\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.7.4\Assemblies\v2.0\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
@@ -129,6 +130,7 @@
     <Compile Include="Base de Datos.vb" />
     <Compile Include="Cliente TCP.vb" />
     <Compile Include="Comunicaciones.vb" />
+    <Compile Include="Depuracion.vb" />
     <Compile Include="GuiaFiltros.vb" />
     <Compile Include="Guia.vb" />
     <Compile Include="GuiaPublica.vb" />

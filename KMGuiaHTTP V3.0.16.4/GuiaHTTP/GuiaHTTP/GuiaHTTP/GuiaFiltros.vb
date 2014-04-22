@@ -33,6 +33,7 @@ Public Class GuiaFiltros
     Private VMFIltros() As Filtro           'Matriz que almacena los filtros segun el grupo
     Private VMblnUsuarioAutentificado As Boolean
     Dim VMGuiaHTTP As GuiaHTTP
+    ''Private VMobjDepuracion As Depuracion
 #End Region
 #Region "Variables utilizadas para la funcion fncRecibirRespuesta"
     '**************************************************************
@@ -256,6 +257,7 @@ Public Class GuiaFiltros
         Try
             VMobjCola = New Queue
             VMGuiaHTTP = VPrincipal
+            ''VMobjDepuracion = Depuracion.Instancia
 
             VMtmrReconecta = New Timers.Timer
             VMtmrReconecta.Enabled = False
@@ -1220,6 +1222,8 @@ Public Class GuiaFiltros
     Private Sub VMtcpServidor_DatosRecibidos(ByVal IDTerminal As System.Net.IPEndPoint, ByVal Datos As String) Handles VMtcpServidor.DatosRecibidos
         If VMipClientes.ContainsValue(IDTerminal) Then
             If Datos.Contains("SENDTRAN") Then
+                ''If ValidarUsr(Datos.Substring(65, 5)) Then
+                ''    VMobjDepuracion.AgregarMensaje("Usuario correcto: " & Datos.Substring(65, 5))
                 _NombrePC = Datos.Substring(51, 14)
                 _Usuario = Datos.Substring(65, 5)
                 _aplicacion = Datos.Substring(71, 2)
@@ -1229,7 +1233,10 @@ Public Class GuiaFiltros
                 Notifica("Se ha recibido la solicitud de envío de información en el puerto " & _puerto & " con los siguientes datos" & vbNewLine & "IP: " & IDTerminal.ToString & vbNewLine & "PC: " & _NombrePC & vbNewLine & "Usuario: " & _Usuario & "[" & _aplicacion & "]", VMGuiaHTTP, enuEscribeLog.Ambos, enuTipoAviso.Informativo)
                 VMblnUsuarioAutentificado = True
                 VMtmrColaEntrada.Enabled = True
-                'End If
+                ''Else
+                ''    VMtcpServidor.Cerrar()
+                ''    VMobjDepuracion.AgregarMensaje("Conexión del usuario: " & Datos.Substring(65, 5) & "terminada")
+                ''End If
             End If
         End If
         VMblnUsuarioAutentificado = True
@@ -1373,4 +1380,72 @@ Acepta:
             VMblnValidaCola = False
         End If
     End Sub
+
+    ''Private Function ValidarUsr(ByVal VPstrUsuario) As Boolean
+    ''    Dim VLdbsBase As Object
+    ''    Dim VLstrSQL As String
+    ''    Dim VLcmdComando As Object
+    ''    Dim VLrcsDatos As Object
+    ''    Dim VLblnUsr As Boolean
+
+    ''    VLblnUsr = False
+    ''    VLdbsBase = Nothing
+    ''    VLrcsDatos = Nothing
+    ''    VLcmdComando = Nothing
+    ''    VLstrSQL = "select * from tuserskm where Id_Usuario = " & VPstrUsuario
+
+    ''    Select Case _BaseCentral.Tipo
+    ''        Case TipoBase.MySQL
+    ''            VLdbsBase = New MySqlConnection
+    ''            VLdbsBase.ConnectionString = "Server = " & _BaseCentral.Servidor & _
+    ''                                         ";database = " & _BaseCentral.Base & _
+    ''                                         ";uid = " & _BaseCentral.Usuario & _
+    ''                                         ";pwd = " & _BaseCentral.Contrasena
+    ''        Case TipoBase.Oracle
+    ''            VLdbsBase = New OracleConnection
+    ''            VLdbsBase.ConnectionString = "Server = " & _BaseCentral.Servidor & _
+    ''                         ";uid = " & _BaseCentral.Usuario & _
+    ''                         ";pwd = " & _BaseCentral.Contrasena
+    ''        Case TipoBase.SQLServer
+    ''            VLdbsBase = New SqlClient.SqlConnection
+    ''            If _BaseCentral.SI Then
+    ''                VLdbsBase.ConnectionString = "Server = " & _BaseCentral.Servidor & _
+    ''                             ";Initial Catalog = " & _BaseCentral.Base & _
+    ''                             ";Integrated Security=SSPI;"
+    ''            Else
+    ''                VLdbsBase.ConnectionString = "Server = " & _BaseCentral.Servidor & _
+    ''                             ";Initial Catalog = " & _BaseCentral.Base & _
+    ''                             ";uid = " & _BaseCentral.Usuario & _
+    ''                             ";pwd = " & _BaseCentral.Contrasena
+    ''            End If
+    ''    End Select
+    ''    Try
+    ''        VLdbsBase.open()
+    ''        Select Case _BaseCentral.Tipo
+    ''            Case TipoBase.MySQL
+    ''                VLcmdComando = New MySqlCommand(VLstrSQL, VLdbsBase)
+    ''            Case TipoBase.SQLServer
+    ''                VLcmdComando = New SqlClient.SqlCommand(VLstrSQL, VLdbsBase)
+    ''            Case TipoBase.Oracle
+    ''                VLcmdComando = New OracleCommand(VLstrSQL, VLdbsBase)
+    ''        End Select
+    ''        Try
+    ''            VLrcsDatos = VLcmdComando.ExecuteReader()
+    ''            If VLrcsDatos.hasrows Then
+    ''                VLblnUsr = True
+    ''            Else
+    ''                VLblnUsr = False
+    ''            End If
+    ''            VLrcsDatos.close()
+    ''            VLcmdComando.dispose()
+    ''        Catch ex As Exception
+    ''            VMobjDepuracion.AgregarMensaje("Error al leer el usuario: " & VPstrUsuario)
+    ''        End Try
+    ''        VLdbsBase.close()
+    ''    Catch ex As Exception
+    ''        VMobjDepuracion.AgregarMensaje("Error al validar el usuario: " & VPstrUsuario)
+    ''    End Try
+
+    ''    Return VLblnUsr
+    ''End Function
 End Class
